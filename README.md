@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# Personal Finance Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, intuitive personal finance management application built for the Lyncs interview task.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Hosted URL:** [Coming Soon - Deploy to Vercel/Netlify]
 
-## React Compiler
+## Features
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### Core Functionality
 
-## Expanding the ESLint configuration
+- **Monthly Income & Expense Tracking**: Record all your financial transactions with detailed categorization
+- **5 Smart Categories**:
+  - Housing
+  - Food
+  - Transportation
+  - Entertainment
+  - Utilities
+- **Budget Management**: Set monthly limits for each category with real-time tracking
+- **Visual Spending Analysis**: Beautiful horizontal bar charts showing spending distribution
+- **Transaction History**: Chronological list with quick delete functionality
+- **Data Persistence**: All data stored in localStorage - no backend required
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### User Experience Delights
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Smooth Dark/Light Mode Toggle**: Respects your preference and persists across sessions
+- **Color-Coded Categories**: Instant visual recognition with consistent color scheme
+- **Budget Status Indicators**:
+  - Safe (under 80%)
+  - Warning (80-99%)
+  - Over Budget (100%+)
+- **Hover Effects**: Subtle animations on cards and interactive elements
+- **Real-time Updates**: Instant calculation and visualization updates
+- **Responsive Design**: Optimized for desktop viewing with mobile considerations
