@@ -63,7 +63,7 @@ export function AddTransaction({ onAdd }: AddTransactionProps) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button size="lg" className="gap-2">
+        <Button size="lg" className="text-xs md:text-sm gap-2">
           <Plus className="h-4 w-4" />
           Add Transaction
         </Button>
