@@ -4,7 +4,7 @@ A modern, intuitive personal finance management application built for the Lyncs 
 
 ## Live Demo
 
-**Hosted URL:** [Coming Soon - Deploy to Vercel/Netlify]
+**Hosted URL:** https://lyncs-omega.vercel.app/
 
 ## Features
 
